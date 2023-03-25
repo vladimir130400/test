@@ -1,0 +1,136 @@
+@charset "utf-8";
+.main-section{
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+    min-width: calc(2 * var(--widthAside) + var(--minMainWidth));
+    background-color: var(--colorBgLighter);
+}
+.main-section__box{
+    margin: 0 auto;
+    padding: 1rem 0;
+    max-width: 80%;
+    min-width: var(--minMainWidth);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+}
+.main-section__filters,
+.main-section__ads{
+    color: var(--colorAccent);
+    text-shadow: 0 0 2px black;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    min-width: var(--widthAside);
+    background-color: var(--colorBgLight);
+    background: no-repeat url(../images/tekstura-doski-list-kofeinye-zerna.jpg);
+    background-size: cover;
+}
+.main-section__ads{
+    background-position: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 2rem;
+}
+.main-section__ads>*{
+    cursor: pointer;
+    border-radius: .5rem;
+}
+.cooking-filter ul{
+    list-style-type: none;
+}
+.cooking-filter ul li:hover{
+    cursor: pointer;
+    color: var(--colorAccent2);
+}
+.cooking-filter input{
+    cursor: pointer;
+}
+.dish-card{
+    transition: .3s;
+    cursor: pointer;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 0 .5rem var(--colorShadow);
+    background-color: var(--colorAccent);
+
+}
+.dish-card:hover{
+    box-shadow: 0 0 .5rem var(--colorAccent2);
+}
+.dish-card:hover .dish-card__img img{
+    transition: 1s;
+    width: 120%;
+}
+.dish-card>a{
+    text-decoration: none;
+    color: black;
+}
+.dish-card__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 18rem;
+}
+.dish-card__img img{
+    transition: .8s;
+    width: 100%;
+}
+.dish-card__figure figcaption{
+    padding: .5rem;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    height: 6rem;
+}
+.dish-card__figure-name{
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+}
+.dish-card__figure-time{
+    justify-self: right;
+}
+.dish-card__comments{
+    place-self: end left;
+}
+.people-likes{
+    place-self: end right;
+    display: flex;
+}
+.people-likes img{
+    width: 1.2rem;
+    margin-left: .5rem;
+}
+/*реклама*/
+.ad_crown{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    background-image: url(../images/209fed05-470d-4eb5-be14-4d6b2017143a.jpg);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.ad_azino{
+    width: 100%;
+    height: 160px;
+    background-color: black;
+    background-image: url(http://36.img.avito.st/avatar/social/1024x1024/5049326836.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
